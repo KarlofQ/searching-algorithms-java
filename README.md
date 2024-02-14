@@ -3,8 +3,8 @@
 - ### Linear Search (often used)
 - ### Binary Search (often used)
 - ### Interpolation Search (sometimes used)
-- ### Jump Search (rarely used)
-- ### Ternary Search (rarely used)
-- ### Exponential Search (rarely used)
+- ### Jump Search (rarely used - Binary Search better)
+- ### Ternary Search (rarely used - Binary Search better)
+- ### Exponential Search (rarely used - Binary Search better)
 
 #### Only in Linear Search array doesn't need to be sorted
