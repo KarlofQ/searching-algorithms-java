@@ -1,3 +1,5 @@
+package main;
+
 public class JumpSearch {
 
     public static int search(int[] array, int target) {
