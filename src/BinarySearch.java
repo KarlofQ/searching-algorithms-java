@@ -6,10 +6,9 @@ public class BinarySearch {
 
         while (low <= high) {
             int mid = low + (high - low) / 2;
-            int actual = array[mid];
 
-            if (actual > target) high = mid - 1;
-            else if (actual < target) low = mid + 1;
+            if (array[mid] > target) high = mid - 1;
+            else if (array[mid] < target) low = mid + 1;
             else return mid;
         }
 
