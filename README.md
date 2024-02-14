@@ -4,3 +4,4 @@
 - ### Binary Search
 - ### Interpolation Search
 - ### Jump Search
+- ### Ternary Search
