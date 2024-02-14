@@ -1,4 +1,6 @@
-## There are 3 searching algoritms coded in java in this project:
+## This repository have the implementation of the following searching algorithms in Java:
+- --
 - ### Linear Search
 - ### Binary Search
 - ### Interpolation Search
+- ### Jump Search

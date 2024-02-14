@@ -5,10 +5,10 @@ public class Main {
         int[] array = {1, 34, 65, 74, 123, 453, 654, 867, 987, 1024, 2782};
         int target = 654;
 
-        int result = interpolationSearch(array, target);
+        int result = jumpSearch(array, target);
 
         if (result == -1) System.out.println("Element not found");
-        else System.out.println("Element found at index: " + result);
+        else System.out.println("Element found at index " + result);
     }
 
     static int linearSearch(int[] array, int target) {
@@ -44,6 +44,23 @@ public class Main {
             if (array[probe] > target) high = probe - 1;
             else if (array[probe] < target) low = probe + 1;
             else return probe;
+        }
+
+        return -1;
+    }
+
+    static int jumpSearch(int[] array, int target) {
+        int n = array.length;
+        int start = 0;
+        int end = (int) Math.sqrt(n);
+
+        while (array[end] < target && start < end) {
+            start = end;
+            end += (int) Math.sqrt(n);
+            if (end > n - 1) end = n - 1;
+        }
+        for (int i = start; i <= end; i++) {
+            if (array[i] == target) return i;
         }
 
         return -1;
