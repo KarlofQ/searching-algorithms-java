@@ -21,6 +21,7 @@ public class Main {
     static int binarySearch(int[] array, int target) {
         int low = 0;
         int high = array.length - 1;
+
         while (low <= high) {
             int mid = low + (high - low) / 2;
             int actual = array[mid];
@@ -39,8 +40,6 @@ public class Main {
 
         while (target >= array[low] && target <= array[high] && low <= high) {
             int probe = low + (high - low) * (target - array[low]) / (array[high] - array[low]);
-
-            System.out.println(probe);
 
             if (array[probe] > target) high = probe - 1;
             else if (array[probe] < target) low = probe + 1;
