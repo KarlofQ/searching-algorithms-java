@@ -5,3 +5,4 @@
 - ### Interpolation Search
 - ### Jump Search
 - ### Ternary Search
+- ### Exponential Search

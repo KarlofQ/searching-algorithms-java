@@ -5,7 +5,7 @@ public class Main {
         int[] array = {1, 34, 65, 74, 123, 453, 654, 867, 987, 1024, 2782};
         int target = 654;
 
-        int result = ternarySearch(array, target);
+        int result = exponentialSearch(array, target);
 
         if (result == -1) System.out.println("Element not found");
         else System.out.println("Element found at index " + result);
@@ -84,6 +84,16 @@ public class Main {
         }
 
         return -1;
+    }
+
+    static int exponentialSearch(int[] array, int target) {
+        if (array[0] == target) return 0;
+
+        int i = 1;
+        while (i < array.length && array[i] <= target) i *= 2;
+
+        return binarySearch(array, target);
+
     }
 
 }
